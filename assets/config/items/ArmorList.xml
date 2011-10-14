@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+	<armorItem>
+		<name>Angelic Vestment</name>
+		<type>ARMOR</type>
+		<value>9000</value>
+		<droppable>false</droppable>
+		<shop>false</shop>
+		<armor>2</armor>
+		<armorType>CLOTH</armorType>
+		<specialType>NORMAL</specialType>
+		<specialPercent>0.90</specialPercent>
+		<level>13</level>
+	</armorItem>
+	<armorItem>
+		<name>Leather Armor</name>
+		<type>ARMOR</type>
+		<value>20</value>
+		<droppable>true</droppable>
+		<shop>true</shop>
+		<armor>3</armor>
+		<armorType>LEATHER</armorType>
+		<specialType>NONE</specialType>
+		<specialPercent>0</specialPercent>
+		<level>1</level>
+	</armorItem>
+	<armorItem>
+		<name>Diamond Plate</name>
+		<type>ARMOR</type>
+		<value>350</value>
+		<droppable>false</droppable>
+		<shop>true</shop>
+		<armor>5</armor>
+		<armorType>PLATE</armorType>
+		<specialType>ICE</specialType>
+		<specialPercent>0.1</specialPercent>
+		<level>4</level>
+	</armorItem>
+	<armorItem>
+		<name>Full Plate Mail</name>
+		<type>ARMOR</type>
+		<value>1200</value>
+		<droppable>true</droppable>
+		<shop>true</shop>
+		<armor>10</armor>
+		<armorType>PLATE</armorType>
+		<specialType>PIERCING</specialType>
+		<specialPercent>0.3</specialPercent>
+		<level>8</level>
+	</armorItem>
+</items>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      android:versionCode="1"
+      android:versionName="1.0" package="org.anddev.game.tests">
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+
+	<application android:icon="@drawable/icon" android:debuggable="true" android:label="@string/app_name">
+        <activity android:name="org.anddev.tests.AndroidInterfaceTest" android:label="@string/labelInterfaceTest">
+        	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="org.anddev.tests.XMLParser" android:label="@string/labelXMLParser">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.anddev.tests.PathModifierExample2" android:label="Pathmod2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.anddev.tests.PathModifierExample" android:label="Pathmod">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name="org.anddev.tests.DigitalOnScreenControlExample" android:label="control">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        
+    </application>
+    <uses-permission android:name="android.permission.WAKE_LOCK"></uses-permission>
+</manifest>

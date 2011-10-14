@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+
+<spell>
+	<name>INFERNO</name>
+	<description>Flames from hell burst through the ground and engulf the target and burn nearby enemies</description>
+	<rankNum>2</rankNum>
+	<ranks>
+		<rank grade="1">
+			<MPcost>7</MPcost>
+			<range in="0" out="2">DIAMOND</range>
+			<effectTemplate in="0" out="1">DIAMOND</effectTemplate>
+			<effects>
+				<effect class="DAMAGE">
+					<power>2.0</power>
+					<powerVar>0.5</powerVar>
+					<magicModPow>0.2</magicModPow>
+					<dmgType>FIRE</dmgType>
+					<effectTemplate in="0" out="0">DIAMOND</effectTemplate>
+				</effect>
+				<effect class="DAMAGEOVERTIME">
+					<name>Inferno</name>
+					<description>You catch fire and take damage over time</description>
+					<power>4.0</power>
+					<duration>1</duration>
+					<powerVar>0.2</powerVar>
+					<durationVar>0.5</durationVar>
+					<magicModPow>0.3</magicModPow>
+					<magicModDur>0.3</magicModDur>
+					<dmgType>FIRE</dmgType>
+					<effectTemplate in="0" out="1">DIAMOND</effectTemplate>
+				</effect>
+			</effects>
+		</rank>
+		
+		
+		<rank grade="2">
+			<MPcost>12</MPcost>
+			<range in="0" out="3">DIAMOND</range>
+			<effectTemplate in="0" out="2">DIAMOND</effectTemplate>
+			<effects>
+				<effect class="DAMAGE">
+					<power>5.0</power>
+					<powerVar>0.5</powerVar>
+					<magicModPow>0.2</magicModPow>
+					<dmgType>FIRE</dmgType>
+					<effectTemplate in="0" out="1">DIAMOND</effectTemplate>
+				</effect>
+				<effect class="DAMAGEOVERTIME">
+					<name>Inferno</name>
+					<description>You catch fire and take damage over time</description>
+					<power>4.0</power>
+					<duration>2</duration>
+					<powerVar>0.2</powerVar>
+					<durationVar>0.5</durationVar>
+					<magicModPow>0.3</magicModPow>
+					<magicModDur>0.3</magicModDur>
+					<dmgType>FIRE</dmgType>
+					<effectTemplate in="0" out="1">DIAMOND</effectTemplate>
+				</effect>
+			</effects>
+		</rank>
+	</ranks>
+</spell>

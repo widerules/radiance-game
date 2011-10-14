@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+	<shieldItem>
+		<name>Round Shield</name>
+		<type>SHIELD</type>
+		<value>20</value>
+		<droppable>false</droppable>
+		<shop>true</shop>
+		<armor>3</armor>
+		<blockChance>0.30</blockChance>
+		<specialType>NORMAL</specialType>
+		<specialPercent>0</specialPercent>
+		<level>2</level>
+	</shieldItem>
+	<shieldItem>
+		<name>Buckler</name>
+		<type>SHIELD</type>
+		<value>10</value>
+		<droppable>true</droppable>
+		<shop>true</shop>
+		<armor>1</armor>
+		<blockChance>0.20</blockChance>
+		<specialType>NORMAL</specialType>
+		<specialPercent>0</specialPercent>
+		<level>1</level>
+	</shieldItem>
+	<shieldItem>
+		<name>Medusa Shield</name>
+		<type>SHIELD</type>
+		<value>2000</value>
+		<droppable>true</droppable>
+		<shop>false</shop>
+		<armor>4</armor>
+		<blockChance>0.30</blockChance>
+		<specialType>NORMAL</specialType>
+		<specialPercent>0.50</specialPercent>
+		<level>7</level>
+	</shieldItem>
+</items>
