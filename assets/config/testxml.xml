@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<items>
+	<weapon>
+		<name>Dagger</name>
+		<type>W1H</type>
+		<weaponType>DAGGER</weaponType>
+		<value>5</value>
+		<dropable>true</dropable>
+		<shop>true</shop>
+		<damage>3</damage>
+		<range in="0" out="2">DIAMOND</range>
+		<specialType>NONE</specialType>
+		<specialPercent>0</specialPercent>
+		<level>1</level>
+	</weapon>
+	<weapon>
+		<name>Hand Axe</name>
+		<type>W1H</type>
+		<weaponType>AXE</weaponType>
+		<value>5</value>
+		<dropable>true</dropable>
+		<shop>true</shop>
+		<damage>3</damage>
+		<range in="0" out="1">DIAMOND</range>
+		<specialType>NONE</specialType>
+		<specialPercent>0</specialPercent>
+		<level>2</level>
+	</weapon>
+	<weapon>
+		<name>Sword of Hyrule</name>
+		<type>W2H</type>
+		<weaponType>SWORD</weaponType>
+		<value>1000</value>
+		<dropable>true</dropable>
+		<shop>false</shop>
+		<damage>30</damage>
+		<range in="2" out="3">DIAMOND</range>
+		<specialType>NONE</specialType>
+		<specialPercent>0</specialPercent>
+		<level>5</level>
+	</weapon>
+
+</items>

@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<enum>
+  <enumValue>DAGGER</enumValue>
+  <enumValue>SWORD</enumValue>
+  <enumValue>AXE</enumValue>
+  <enumValue>SPEAR</enumValue>
+  <enumValue>BOW</enumValue>
+  <enumValue>STAFF</enumValue>
+  <enumValue>WAND</enumValue>
+</enum>

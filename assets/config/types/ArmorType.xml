@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<enum>
+  <enumValue>CLOTH</enumValue>
+  <enumValue>LEATHER</enumValue>
+  <enumValue>CHAIN</enumValue>
+  <enumValue>PLATE</enumValue>
+</enum>

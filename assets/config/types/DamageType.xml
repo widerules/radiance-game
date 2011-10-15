@@ -1,0 +1,11 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. -->
+<enum>
+	<enumValue>NONE</enumValue>
+	<enumValue>NORMAL</enumValue>
+	<enumValue>PIERCING</enumValue>
+	<enumValue>FIRE</enumValue>
+	<enumValue>ICE</enumValue>
+	<enumValue>POISON</enumValue>
+	<enumValue>HEAL</enumValue>
+</enum>
