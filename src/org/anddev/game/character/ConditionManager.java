@@ -33,7 +33,7 @@ import org.anddev.game.spells.TargetedSpell;
 public class ConditionManager {
 	/**
 	 * Character Class Module that manages character condition information
-	 * and is used to calculate bonuses or penalties during combat
+	 * and is used to calculate bonuses or penalties during combat 
 	 */
 	
 	private Character myCharacter;
