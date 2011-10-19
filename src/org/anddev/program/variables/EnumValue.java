@@ -20,36 +20,27 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.variables;
+package org.anddev.program.variables;
 
-import android.graphics.Point;
-
-
-public class GPoint extends Point{
-	
+public class EnumValue {
 	/**
+	 * Holds the Value of a custom enum (created at runtime)
 	 * 
+	 * superID: the custom enum identifier
+	 * thisValue: the enum value
 	 */
-	private static final long serialVersionUID = 5879405235472152839L;
 	
-	////////////////////
-	//	Constructor
-	////////////////////
-	public GPoint(int x, int y) {
-		this.x = x;
-		this.y = y;
-	}
+	private  EnumClass superID;
+	private int thisValue;
 	
-	public GPoint(GPoint point) {
-		this.x = point.x;
-		this.y = point.y;
+		
+	protected EnumValue(EnumClass enumClass, int value) {
+		this.superID = enumClass;
+		this.thisValue = value;
 	}
+		
+	public EnumClass getEnum() { return superID; }
+	public int getValue() { return thisValue; }
+	public String toString() { return String.valueOf(thisValue); }
 	
-	public GPoint add (Point b) {
-		/**
-		 * Returns a NEW point by adding the coordinates of the 2 points
-		 */
-		return new GPoint((this.x + b.x), (this.y + b.y));
-	}
-
 }

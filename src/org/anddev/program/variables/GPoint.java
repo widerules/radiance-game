@@ -20,24 +20,36 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.program;
+package org.anddev.program.variables;
 
-import org.anddev.game.combat.Damage;
-import org.anddev.game.items.GlobalItemList;
-import org.anddev.game.items.ItemBase;
+import android.graphics.Point;
 
-import android.app.Activity;
 
-public class Init {
+public class GPoint extends Point{
 	
-	public static void init_All(Activity activity) {
-		
-		GameState.init(activity);	// Initialize all handlers (menu, cursor, template, etc.)
-		
-		
-		Damage.initDamageType();
-		ItemBase.initItemTypes();
-		
-		GlobalItemList.loadListXML();
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 5879405235472152839L;
+	
+	////////////////////
+	//	Constructor
+	////////////////////
+	public GPoint(int x, int y) {
+		this.x = x;
+		this.y = y;
 	}
+	
+	public GPoint(GPoint point) {
+		this.x = point.x;
+		this.y = point.y;
+	}
+	
+	public GPoint add (Point b) {
+		/**
+		 * Returns a NEW point by adding the coordinates of the 2 points
+		 */
+		return new GPoint((this.x + b.x), (this.y + b.y));
+	}
+
 }

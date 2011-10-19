@@ -20,7 +20,7 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.program;
+package org.anddev.program;
 
 import java.io.IOException;
 import java.io.InputStream;

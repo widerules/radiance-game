@@ -28,7 +28,7 @@ import java.util.Vector;
 
 import org.anddev.game.constants.Types.templateType;
 import org.anddev.game.spells.effects.BaseEffect;
-import org.anddev.game.spells.effects.EffectList;
+import org.anddev.game.spells.effects.GlobalEffectList;
 import org.anddev.game.template.Template.TemplateInfo;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
@@ -92,7 +92,7 @@ public class SpellRank {
 			Node effectNode = listOfEffects.item(s);
 			if(effectNode.getNodeType() == Node.ELEMENT_NODE){
 				try { 
-					this.cEffectList.add(EffectList.createEffect(effectNode));
+					this.cEffectList.add(GlobalEffectList.createEffect(effectNode));
 				}catch (Exception t) {
 					StringWriter sw = new StringWriter();
 					PrintWriter pw = new PrintWriter(sw);

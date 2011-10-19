@@ -26,7 +26,7 @@ package org.anddev.tests;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import org.anddev.engine.program.GameState;
+import org.anddev.program.GameState;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;

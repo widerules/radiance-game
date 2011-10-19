@@ -20,7 +20,7 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.program;
+package org.anddev.program;
 
 import org.anddev.game.character.PlayerCharacter;
 import org.anddev.game.constants.Types.gstate;
@@ -43,6 +43,8 @@ public class GameState {
 	
 	public static ProgramInterface programInterface;
 	
+	private static boolean androidSystem = false;
+	
 	
 	
 	//////////////////////////////
@@ -52,6 +54,7 @@ public class GameState {
 		menuHandler = new MenuHandler();
 		programInterface = new ProgramInterface();
 		programInterface.loadAssets(activity);
+		androidSystem = true;
 	}
 	
 
@@ -99,6 +102,9 @@ public class GameState {
 		return programInterface;
 	}
 	
+	public static boolean getAndroidSystemStatus() {
+		return androidSystem;
+	}
 	
 	
 	

@@ -28,8 +28,7 @@ public class AttributesManager {
 	 * This manages derived attributes from skills, items, buffs, etc.
 	 */
 	
-	// Character
-	private Character myCharacter;
+	public static enum Attributes { ARMOR, DODGE, BLOCK, CRITICAL, ATTACKRES, MAGICRES };
 	
 	
 	private static final double staticDodge = 0.02;			//	2%
@@ -69,7 +68,9 @@ public class AttributesManager {
 	private final static double magicResistSpeedMod = 0.0;
 	
 	
-	
+	// Character
+	private Character myCharacter;
+		
 	// Base statistical values (calculated from attributes etc.)
 	private int baseArmor;									// total armor
 	private double baseDodgeChance;							// % chance to evade totally an attack

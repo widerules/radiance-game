@@ -25,7 +25,8 @@ package org.anddev.game.spells;
 import java.io.InputStream;
 import java.util.HashMap;
 
-import org.anddev.engine.config.Filepath;
+import org.anddev.program.config.Filepath;
+import org.anddev.util.FileUtil;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -69,7 +70,7 @@ public class SpellList {
 	//////////////////////////
 	static private void readSpellList(String spellListFile) {
 		try{
-			InputStream masterListFile = XMLutil.getAsset(spellListFile);
+			InputStream masterListFile = FileUtil.open(spellListFile);
 			try {
 				NodeList listOfSpellsNames = XMLutil.getXMLroot(masterListFile).getChildNodes();
 				for(int s=0; s<listOfSpellsNames.getLength() ; s++) {
@@ -93,7 +94,7 @@ public class SpellList {
 	static private void loadSpell(String spellPath) {
 		// Creates and stores a new spell in the spellList
 		try {
-			InputStream spellFile = XMLutil.getAsset(spellPath);	
+			InputStream spellFile = FileUtil.open(spellPath);	
 			try {
 				Node spellNode = XMLutil.getXMLroot(spellFile);
 				BaseSpell newSpell = TargetedSpell.class.newInstance().create(spellNode);

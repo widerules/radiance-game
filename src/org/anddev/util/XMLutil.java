@@ -31,7 +31,7 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
 
-import org.anddev.engine.program.GameState;
+import org.anddev.program.GameState;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -103,18 +103,5 @@ public class XMLutil {
 		Document doc = docBuilder.parse(file);
 		doc.getDocumentElement().normalize();
 		return doc.getDocumentElement();
-	}
-	
-	public static InputStream getAsset(String path) throws IOException {
-		return GameState.getProgramInterface().getAssetFile(path);
-	}
-	
-	public static InputStream getFile(String path) throws IOException {
-		return new FileInputStream(path);
-	}
-	
-
-	public static void close(InputStream file) throws IOException {
-		file.close();
 	}
 }

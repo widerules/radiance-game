@@ -1,0 +1,23 @@
+---
+
+name: Skull Key
+type: MISC
+value: 0
+droppable: false
+shop: false
+level: 1
+---   
+name: Farm Apples
+type: MISC
+value: 5
+droppable: true
+shop: true
+level: 1
+---  
+name: Pandora's Box
+type: QUEST
+value: 1000000
+droppable: false
+shop: false
+level: 1
+...

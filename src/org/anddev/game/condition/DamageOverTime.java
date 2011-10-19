@@ -23,11 +23,11 @@
 package org.anddev.game.condition;
 import java.io.InputStream;
 
-import org.anddev.engine.variables.EnumValue;
 import org.anddev.game.character.Character;
 import org.anddev.game.combat.Attack;
 import org.anddev.game.combat.Damage;
 import org.anddev.game.spells.TargetedSpell;
+import org.anddev.program.variables.EnumValue;
 
 
 public class DamageOverTime implements BaseCondition {

@@ -21,10 +21,10 @@
  */
 
 package org.anddev.tests;
-import org.anddev.engine.program.Init;
 import org.anddev.game.character.PlayerCharacter;
 import org.anddev.game.items.GlobalItemList;
 import org.anddev.game.items.ItemBase;
+import org.anddev.program.Init;
 
 import android.app.Activity;
 
