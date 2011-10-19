@@ -31,7 +31,7 @@ import org.w3c.dom.Node;
 
 import android.util.Log;
 
-public class EffectList {
+public class GlobalEffectList {
 
 	/**
 	 * Global Effect list.

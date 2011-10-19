@@ -22,9 +22,9 @@
 
 package org.anddev.game.template;
 
-import org.anddev.engine.variables.GPoint;
 import org.anddev.game.GridRange;
 import org.anddev.game.engine.InputListener.inputType;
+import org.anddev.program.variables.GPoint;
 
 public class TemplateHandler {
 	

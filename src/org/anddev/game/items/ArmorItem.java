@@ -23,7 +23,7 @@
 package org.anddev.game.items;
 
 import org.anddev.game.combat.Damage;
-import org.anddev.engine.variables.EnumValue;
+import org.anddev.program.variables.EnumValue;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 

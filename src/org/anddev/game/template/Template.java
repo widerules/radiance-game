@@ -22,8 +22,8 @@
 
 package org.anddev.game.template;
 
-import org.anddev.engine.variables.GPoint;
 import org.anddev.game.constants.Types.templateType;
+import org.anddev.program.variables.GPoint;
 
 
 public class Template {

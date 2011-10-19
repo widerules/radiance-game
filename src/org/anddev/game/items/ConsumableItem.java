@@ -22,10 +22,10 @@
 
 package org.anddev.game.items;
 
-import org.anddev.engine.variables.EnumValue;
 import org.anddev.game.combat.Damage;
 import org.anddev.game.constants.Types.templateType;
 import org.anddev.game.template.Template.TemplateInfo;
+import org.anddev.program.variables.EnumValue;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 

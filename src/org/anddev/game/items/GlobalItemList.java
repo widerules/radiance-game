@@ -24,9 +24,9 @@ package org.anddev.game.items;
 
 import java.io.InputStream;
 
-import org.anddev.engine.config.Filepath;
 import org.anddev.game.items.WeaponList;
-import org.anddev.util.XMLutil;
+import org.anddev.program.config.Filepath;
+import org.anddev.util.FileUtil;
 
 import android.util.Log;
 
@@ -57,45 +57,45 @@ public class GlobalItemList {
 		// Initializer should be called at program startup
 		try {
 			weaponList = WeaponList.createEmpty();
-			InputStream wepFile = XMLutil.getAsset(Filepath.xmlWeapons);
+			InputStream wepFile = FileUtil.open(Filepath.xmlWeapons);
 			weaponList.initialize(wepFile);
-			wepFile.close();
+			FileUtil.close(Filepath.xmlWeapons);
 		}
 		catch (Exception err) {
 			Log.e("GLOBALITEMLIST", err.getMessage());
 		}
 		try {
 			shieldList = ShieldList.createEmpty();
-			InputStream shdFile = XMLutil.getAsset(Filepath.xmlWeapons);
+			InputStream shdFile = FileUtil.open(Filepath.xmlShields);
 			shieldList.initialize(shdFile);
-			shdFile.close();
+			FileUtil.close(Filepath.xmlShields);
 		}
 		catch (Exception err) {
 			Log.e("GLOBALITEMLIST", err.getMessage());
 		}
 		try {
 			armorList = ArmorList.createEmpty();
-			InputStream armFile = XMLutil.getAsset(Filepath.xmlWeapons);
+			InputStream armFile = FileUtil.open(Filepath.xmlArmors);
 			armorList.initialize(armFile);
-			armFile.close();
+			FileUtil.close(Filepath.xmlArmors);
 		}
 		catch (Exception err) {
 			Log.e("GLOBALITEMLIST", err.getMessage());
 		}
 		try {
 			consumableList = ConsumableList.createEmpty();
-			InputStream conFile = XMLutil.getAsset(Filepath.xmlWeapons);
+			InputStream conFile = FileUtil.open(Filepath.xmlConsumables);
 			consumableList.initialize(conFile);
-			conFile.close();
+			FileUtil.close(Filepath.xmlConsumables);
 		}
 		catch (Exception err) {
 			Log.e("GLOBALITEMLIST", err.getMessage());
 		}
 		try {
 			otherList = MiscList.createEmpty();
-			InputStream misFile = XMLutil.getAsset(Filepath.xmlWeapons);
+			InputStream misFile = FileUtil.open(Filepath.xmlOthers);
 			otherList.initialize(misFile);
-			misFile.close();
+			FileUtil.close(Filepath.xmlOthers);
 		}
 		catch (Exception err) {
 			Log.e("GLOBALITEMLIST", err.getMessage());

@@ -22,6 +22,7 @@
 
 package org.anddev.game.items;
 
+import org.anddev.program.variables.EnumValue;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 
@@ -37,11 +38,13 @@ public abstract class Item extends ItemBase{
 	///////////////////////////
 	protected String name;
 	protected ITMtype type;				// itype
+	protected EnumValue subtype;		// item subtype
 	protected int value;				// normal cost
 	protected int ID;					// serial number after sorting (temporary)
 	protected Boolean droppable;		// items that can be dropped (by chance, not explicitly)
 	protected Boolean shoppable;		// items that can be found at shops
 	protected int levelRequired;		// level required to use or game level (for shops)
+	
 	
 	
 	

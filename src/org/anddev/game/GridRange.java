@@ -24,8 +24,8 @@ package org.anddev.game;
 
 import java.util.ArrayList;
 
-import org.anddev.engine.variables.GPoint;
 import org.anddev.game.template.Template;
+import org.anddev.program.variables.GPoint;
 
 public class GridRange {
 	/**

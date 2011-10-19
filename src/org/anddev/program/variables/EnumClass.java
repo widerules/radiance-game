@@ -20,7 +20,7 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.variables;
+package org.anddev.program.variables;
 
 
 import java.io.InputStream;
@@ -28,8 +28,11 @@ import java.io.PrintWriter;
 import java.io.StringWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.LinkedList;
 import java.util.Vector;
 
+import org.anddev.util.FileUtil;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
@@ -67,10 +70,23 @@ public class EnumClass {
 		 */
 		EnumClass newEnum = new EnumClass() ;
 		try{
-			InputStream ifile = XMLutil.getAsset(path);
+			InputStream ifile = FileUtil.open(path);
 			newEnum.loadEnumValues(ifile);
 			masterEnumID++;
 			ifile.close();
+		} catch (Exception err) { 
+			Log.e("ENUMVAR-FILE", err.getMessage()); 
+		}
+		return newEnum;
+	}
+	public static EnumClass create(ArrayList<Object> list) {
+		/**
+		 * create a dynamic enum from xml file
+		 */
+		EnumClass newEnum = new EnumClass() ;
+		try{
+			newEnum.loadEnumValues(list);
+			masterEnumID++;
 		} catch (Exception err) { 
 			Log.e("ENUMVAR-FILE", err.getMessage()); 
 		}
@@ -86,15 +102,14 @@ public class EnumClass {
 	//	Public Methods
 	///////////////////////////////////// 
 	public Boolean memberOf(EnumValue oneEnum) {
-		if(oneEnum.getEnum() != this.getClass()) {
+		if(oneEnum.getEnum() != this) {
 			return false;
 		}
 		else { return true; }
 	}
 	
 	public int compare(EnumValue oneEnum, EnumValue otherEnum) throws IllegalArgumentException {
-		if ((oneEnum.getEnum() != this.getClass()) &&
-				(otherEnum.getEnum() != this.getClass())) {	
+		if ((oneEnum.getEnum() != this) && (otherEnum.getEnum() != this)) {	
 				throw new IllegalArgumentException();
 			}
 		else {
@@ -120,7 +135,7 @@ public class EnumClass {
 	
 	public EnumValue valueOf(String str) throws NullPointerException {
 		int value = this.valuesTable.get(str);
-			return new EnumValue(this.getClass(), value );
+			return new EnumValue(this, value );
 	}
 	public String nameOf(EnumValue value) {
 		return this.nameTable.get(value.getValue());
@@ -132,7 +147,7 @@ public class EnumClass {
 		 * returns the first value of the enum
 		 * (that should be the integer value of the first string put into the table)
 		 */
-		return new EnumValue(this.getClass(), (Integer)valuesTable.values().toArray()[0]);
+		return new EnumValue(this, (Integer)valuesTable.values().toArray()[0]);
 	}
 	
 	public int size() {
@@ -148,12 +163,19 @@ public class EnumClass {
 	}
 	
 	
+	
 	////////////////
 	//	Getters
 	///////////////
 	public int getEnumID() {
 		return this.enumID;
 	}
+	
+	
+	
+	
+	
+	
 	
 	//////////////////////////
 	//	private constructors
@@ -163,13 +185,6 @@ public class EnumClass {
 		this.valuesTable = new HashMap<String, Integer>();
 		this.nameTable = new ArrayList<String>();
 	}
-	private EnumClass(InputStream ifile) {
-		this.enumID = masterEnumID;
-		this.valuesTable = new HashMap<String, Integer>();
-		this.nameTable = new ArrayList<String>();
-		this.loadEnumValues(ifile);
-	}
-	
 	
 	private void loadEnumValues(InputStream ifile) {
 		this.enumID = masterEnumID;
@@ -194,6 +209,16 @@ public class EnumClass {
 			}
 		} catch (Exception err) { 
 			Log.e("ENUMVAR", err.getMessage()); 
+		}
+	}
+	
+	private void loadEnumValues(ArrayList<Object> input) {
+		this.enumID = masterEnumID;
+		for(int i=0; i<input.size(); i++) {
+			String key = input.get(i).toString();
+			Integer value = new Integer(i);
+			this.valuesTable.put(key, value);
+			this.nameTable.add(key);
 		}
 	}
 }

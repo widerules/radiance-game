@@ -22,8 +22,8 @@
 
 package org.anddev.game.items;
 
-import org.anddev.engine.config.Filepath;
-import org.anddev.engine.variables.EnumClass;
+import org.anddev.program.config.Filepath;
+import org.anddev.program.variables.EnumClass;
 
 import android.util.Log;
 
@@ -35,9 +35,8 @@ public abstract class ItemBase {
 	public static enum ITMtype { W1H, W2H, SHIELD, ARMOR, CONSUMABLE, QUEST, MISC }		// Item
 	public static enum CONtype { HEAL, RESTORE, DAMAGE, BUFF, DEBUF }					// Consumable
 	
-	public static EnumClass WEPtype;			// Wepaons
-	public static EnumClass ARMtype;			// Armors
-	//public static EnumClass DMGtype; 			// Damage
+	public static EnumClass WEPtype;			// Weapon subtype
+	public static EnumClass ARMtype;			// Armor subtype
 	
 	
 	

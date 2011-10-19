@@ -24,11 +24,12 @@ package org.anddev.game.spells.effects;
 
 import org.anddev.game.character.Character;
 import org.anddev.game.template.Template.TemplateInfo;
+import org.anddev.util.StrDictionary;
 import org.w3c.dom.Node;
 
 public interface BaseEffect {
 
-	//BaseTargetEffect create(Node neffect);
+	//public BaseEffect create(StrDictionary neffect) throws Exception;
 	public BaseEffect create(Node neffect) throws Exception;
 	public TemplateInfo getEffectTemplate();
 	public void apply(Character caster, Character target);

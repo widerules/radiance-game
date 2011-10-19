@@ -26,7 +26,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Vector;
 
-import org.anddev.engine.variables.EnumValue;
+import org.anddev.program.variables.EnumValue;
 
 public class ResistList extends HashMap<EnumValue, Double> {
 	/**

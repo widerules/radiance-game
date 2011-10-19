@@ -24,12 +24,12 @@ package org.anddev.game.spells.effects;
 
 import java.util.Random;
 
-import org.anddev.engine.variables.EnumValue;
 import org.anddev.game.character.Character;
 import org.anddev.game.combat.Damage;
 import org.anddev.game.condition.DamageOverTime;
 import org.anddev.game.constants.Types.templateType;
 import org.anddev.game.template.Template.TemplateInfo;
+import org.anddev.program.variables.EnumValue;
 import org.anddev.util.XMLutil;
 import org.w3c.dom.Node;
 
@@ -82,13 +82,13 @@ public class DamageOverTimeEffect implements BaseEffect{
 		 * Applies a Damage-over-time condition to the target
 		 * Damage per round is calculated as 
 		 * (BasePower) +
+		 * (magicModifierPower percent the caster's Magic attribute)
 		 * (+ or - a random percent between 0% and basePowerVariation of BasePower) +
-		 * (magicPowerModifier percent the caster's Magic attribute)
 		 * 
 		 * round duration is calculated as
 		 * (Base Duration) +
 		 * (+ or - a random percent between 0% and baseDurationVariation of baseDuration) +
-		 * (
+		 * (magicModifierDuration percent the caster's Magic attribute)
 		 */
 		Random generator = new Random();
 		double damageVar = ((generator.nextDouble()*2.0)/this.basePowerVariation) - this.basePowerVariation;

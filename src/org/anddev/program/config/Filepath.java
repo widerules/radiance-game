@@ -20,7 +20,7 @@
  * @author VagosDuke
  */
 
-package org.anddev.engine.config;
+package org.anddev.program.config;
 
 public class Filepath {
 	/**
@@ -28,6 +28,7 @@ public class Filepath {
 	 */
 	
 	// Enum Types
+	public final static String yamlItemSubTypes = "config/types/ItemSubType.yaml";
 	public final static String xmlWeaponTypes = "config/types/WeaponType.xml";
 	public final static String xmlArmorTypes = "config/types/ArmorType.xml";
 	public final static String xmlDamageTypes = "config/types/DamageType.xml";

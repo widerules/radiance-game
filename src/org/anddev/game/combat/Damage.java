@@ -22,9 +22,9 @@
 
 package org.anddev.game.combat;
 
-import org.anddev.engine.config.Filepath;
-import org.anddev.engine.variables.EnumClass;
-import org.anddev.engine.variables.EnumValue;
+import org.anddev.program.config.Filepath;
+import org.anddev.program.variables.EnumClass;
+import org.anddev.program.variables.EnumValue;
 
 import android.util.Log;
 
