@@ -1,0 +1,91 @@
+---
+name: Aid
+description: Rejuvenating energies aid the soldiers in battle
+rankNum: 2
+ranks:
+    - rank: 1
+      MPcost: 5
+      range: 
+          rangeIn: 0
+          rangeOut: 1
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 0
+          shape: DIAMOND
+      effects:
+          - class: HEAL
+            power: 4.0
+            powerVar: 0.3
+            abilityPowerMod: 0.4
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+          - class: STATSBUFF
+            ConditionName: Aid
+            description: You have been refreshed by magic
+            duration: 2
+            durationVar: 0.0
+            abilityDurationMod: 0.1 
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+            buffStats:
+                - power: 2
+                  powerVar: 0.0
+                  abilityPowerMod: 0.1
+                  stat: OFFENSE
+                - power: 2
+                  powerVar: 0.0
+                  abilityPowerMod: 0.1
+                  stat: DEFENSE
+                
+    - rank: 2
+      MPcost: 10
+      range: 
+          rangeIn: 0
+          rangeOut: 2
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 0
+          shape: DIAMOND
+      effects:
+          - class: HEAL
+            power: 6.0
+            powerVar: 0.3
+            abilityPowerMod: 0.7
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+          - class: STATSBUFF
+            ConditionName: Aid
+            description: You have been empowered by magic
+            duration: 2
+            durationVar: 0.0
+            abilityDurationMod: 0.15 
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+            buffStats:
+                - stat: OFFENSE
+                  power: 6
+                  powerVar: 0.0
+                  abilityPowerMod: 0.15
+                - stat: DEFENSE
+                  power: 6
+                  powerVar: 0.0
+                  abilityPowerMod: 0.15
+                - stat: ABILITY
+                  power: 6
+                  powerVar: 0.0
+                  abilityPowerMod: 0.15
+                - stat: SPEED
+                  power: 6
+                  powerVar: 0.0
+                  abilityPowerMod: 0.15
+...

@@ -1,0 +1,274 @@
+---
+ - name: Dagger
+   description: A long knife.
+   type: WEAPON
+   subtype: DAGGER
+   damage:
+      - damageType: NORMAL
+        min: 2
+        max: 3
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 4
+   level: 1
+   size: 1
+   weight: 1.2
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+   
+   
+   
+ - name: Long Spear
+   description: A wooden spear. Usefull for poking enemies from distance
+   type: WEAPON
+   subtype: SPEAR
+   damage:
+      - damageType: NORMAL
+        min: 1
+        max: 8
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: SQUARE
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 20
+   level: 2
+   size: 2
+   weight: 2.2
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+   
+   
+ - name: Short Sword
+   description: A small sword more usefull for thrusting than slashing
+   type: WEAPON
+   subtype: SWORD
+   damage:
+      - damageType: NORMAL
+        min: 3
+        max: 6
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 10
+   level: 1
+   size: 1
+   weight: 2.0
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+ - name: Icicle
+   description: This thing is a sharpened piece of ice on a hilt
+   type: WEAPON
+   subtype: SWORD
+   damage:
+      - damageType: NORMAL
+        min: 4
+        max: 8
+      - damageType: ICE
+        min: 2
+        max: 4
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 130
+   level: 5
+   size: 1
+   weight: 2.0
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+ - name: Sword of Hyrule
+   description: This fabled sword vanquises every enemy in its path
+   type: WEAPON
+   subtype: SWORD
+   damage:
+      - damageType: NORMAL
+        min: 30
+        max: 30
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 2400
+   level: 10
+   size: 1
+   weight: 2.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: CRITICAL
+        amount: 0.20
+        
+      - stat: OFFENSE
+        amount: 10
+   
+   
+  
+ - name: Hand Axe
+   description: The woodcutter's best friend
+   type: WEAPON
+   subtype: AXE
+   damage:
+      - damageType: NORMAL
+        min: 4
+        max: 8
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 20
+   level: 2
+   size: 1
+   weight: 3.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+ - name: Whirlwind
+   description: The aerodynamic blade can swirl around
+   type: WEAPON
+   subtype: AXE
+   damage:
+      - damageType: NORMAL
+        min: 4
+        max: 8
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 1000
+   level: 8
+   size: 2
+   weight: 3.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   
+   
+   
+   
+ - name: Pike
+   description: This very long spear is not made for conventional melee combat
+   type: WEAPON
+   subtype: AXE
+   damage:
+      - damageType: NORMAL
+        min: 8
+        max: 20
+   range: 
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+       snaps: NONE
+   effectTemplate:
+       rangeIn: 1
+       rangeOut: 1
+       shape: DIAMOND
+   value: 1500
+   level: 8
+   size: 2
+   weight: 6.9
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: CRITICAL
+        amount: 0.07
+   
+   
+   
+   
+   
+ - name: Lightning Spear
+   description: With each strike, the target is jolted with lightning
+   type: WEAPON
+   subtype: SPEAR
+   damage:
+      - damageType: NORMAL
+        min: 2
+        max: 8
+      - damageType: LIGHTNING
+        min: 4
+        max: 6
+   range: 
+       rangeIn: 1
+       rangeOut: 1
+       shape: SQUARE
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   value: 200
+   level: 4
+   size: 2
+   weight: 3.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: CRITICAL
+        amount: 0.09
+...

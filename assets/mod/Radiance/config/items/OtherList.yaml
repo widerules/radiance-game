@@ -1,0 +1,45 @@
+---
+ - name: Skull Key
+   description: A small key with a human scull decoration
+   type: OTHER
+   subtype: MISCELLANEOUS
+   value: 0
+   level: 1
+   size: 0
+   weight: 0.1
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: false
+  
+   
+
+ - name: Farm Apples
+   description: Some red juicy apples
+   type: OTHER
+   subtype: QUEST
+   value: 5
+   level: 1
+   size: 0
+   weight: 0.3
+   usable: false
+   stackable: true
+   droppable: false
+   shoppable: true
+   
+   
+   
+   
+ - name: Pandora's Box
+   description: It is said that contains all evil
+   type: OTHER
+   subtype: QUEST
+   value: 0
+   level: 1
+   size: 0
+   weight: 2.0
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: false
+...

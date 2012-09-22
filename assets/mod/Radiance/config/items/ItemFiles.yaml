@@ -1,0 +1,21 @@
+---
+weapons:
+  - config/items/WeaponList.yaml
+    
+shields:
+  - config/items/ShieldList.yaml
+  
+armors: 
+  - config/items/ArmorList.yaml
+
+accessories:
+  - config/items/AccessoryList.yaml
+
+movements:
+  - config/items/MovementList.yaml
+
+consumables:
+  - config/items/ConsumableList.yaml
+
+others:
+  - config/items/OtherList.yaml

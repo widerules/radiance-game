@@ -1,0 +1,49 @@
+---
+ - name: Ring of Embers
+   description: This golden ring has a big red stone that glows like heated metal
+   type: ACCESSORY
+   subtype: RING
+   value: 1000
+   level: 6
+   size: 1
+   weight: 0.1
+   usable: true
+   stackable: false
+   droppable: false
+   shoppable: true
+   range: 
+       rangeIn: 0
+       rangeOut: 1
+       shape: SQUARE
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   onUseEffects:
+     - class: DAMAGE
+       power: 15.0
+       powerVar: 0.5
+       abilityPowerMod: 0.0
+       damageType: FIRE
+       effectTemplate:
+         rangeIn: 0
+         rangeOut: 0
+         shape: DIAMOND
+
+
+ - name: Bracers of Armor
+   description: A couple of simple sturdy bracers
+   type: ACCESSORY
+   subtype: BRACER
+   value: 200
+   level: 3
+   size: 1
+   weight: 2.0
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: true
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 6
+...

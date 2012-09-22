@@ -1,0 +1,75 @@
+---
+name: Inferno
+description: Flames from hell burst through the ground engulfing the target and burn nearby enemies
+rankNum: 2
+ranks:
+    - rank: 1
+      MPcost: 7
+      range: 
+          rangeIn: 0
+          rangeOut: 2
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 1
+          shape: DIAMOND
+      effects:
+          - class: DAMAGE
+            power: 2.0
+            powerVar: 0.5
+            abilityPowerMod: 0.2
+            damageType: FIRE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+          - class: DAMAGEOVERTIME
+            ConditionName: Inferno
+            description: You caught fire and take damage over time
+            power: 4.0
+            duration: 1
+            powerVar: 0.2
+            durationVar: 0.5
+            abilityPowerMod: 0.3
+            abilityDurationMod: 0.3 
+            damageType: FIRE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 1
+                shape: DIAMOND
+
+    - rank: 2
+      MPcost: 12
+      range: 
+          rangeIn: 0
+          rangeOut: 3
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 2
+          shape: DIAMOND
+      effects:
+          - class: DAMAGE
+            power: 5.0
+            powerVar: 0.5
+            abilityPowerMod: 0.2
+            damageType: FIRE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 1
+                shape: DIAMOND
+          - class: DAMAGEOVERTIME
+            ConditionName: Inferno
+            description: You caught fire and take damage over time
+            power: 4.0
+            duration: 2
+            powerVar: 0.2
+            durationVar: 0.5
+            abilityPowerMod: 0.3
+            abilityDurationMod: 0.3 
+            damageType: FIRE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 1
+                shape: DIAMOND
+...

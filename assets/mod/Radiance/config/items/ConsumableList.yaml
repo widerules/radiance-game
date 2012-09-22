@@ -1,0 +1,170 @@
+---
+ - name: Light Health Potion
+   description: It will heal mild wounds when it comes in contact with them
+   type: CONSUMABLE
+   subtype: POTION
+   value: 10
+   level: 1
+   size: 0
+   weight: 0.5
+   usable: true
+   stackable: true
+   droppable: true
+   shoppable: true
+   range: 
+       rangeIn: 0
+       rangeOut: 1
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   onUseEffects:
+      - class: HEAL
+        power: 6.0
+        powerVar: 0.4
+        abilityPowerMod: 0.0
+        targets: BOTH
+        effectTemplate:
+          rangeIn: 0
+          rangeOut: 1
+          shape: DIAMOND
+          
+          
+          
+          
+          
+ - name: Light Mana Potion
+   description: Clears the mind and restores lost energy
+   type: CONSUMABLE
+   subtype: POTION
+   value: 20
+   level: 1
+   size: 0
+   weight: 0.5
+   usable: true
+   stackable: true
+   droppable: true
+   shoppable: true
+   range: 
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   onUseEffects:
+      - class: HEAL
+        power: 6.0
+        powerVar: 0.4
+        abilityPowerMod: 0.0
+        targets: BOTH
+        effectTemplate:
+          rangeIn: 0
+          rangeOut: 1
+          shape: DIAMOND
+          
+          
+          
+          
+          
+ - name: Goodberry
+   description: They appear as blueberries but they'r more than that
+   type: CONSUMABLE
+   subtype: FOOD
+   value: 20
+   level: 2
+   size: 0
+   weight: 0.1
+   usable: true
+   stackable: true
+   droppable: true
+   shoppable: true
+   range: 
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   onUseEffects:
+      - class: STATSBUFF
+        ConditionName: Goodberries
+        description: Magic Berries make you stronger.
+        duration: 3
+        durationVar: 0.0
+        abilityDurationMod: 0.05
+        targets: ALLY
+        effectTemplate:
+          rangeIn: 0
+          rangeOut: 0
+          shape: DIAMOND
+        buffStats:
+          - stat: HITPOINTMAX
+            power: 10
+            powerVar: 0.3
+            abilityPowerMod: 0.0
+          - stat: OFFENSE 
+            power: 4
+            powerVar: 0.3
+            abilityPowerMod: 0.0
+          - stat: DEFENSE 
+            power: 4
+            powerVar: 0.3
+            abilityPowerMod: 0.0
+            
+            
+            
+            
+ - name: Liquid Fire
+   description: If it is tossed on an enemy, it sets him on fire
+   type: CONSUMABLE
+   subtype: POTION
+   value: 40
+   level: 3
+   size: 0
+   weight: 0.6
+   usable: true
+   stackable: true
+   droppable: true
+   shoppable: true
+   range: 
+       rangeIn: 0
+       rangeOut: 1
+       shape: SQUARE
+   effectTemplate:
+       rangeIn: 0
+       rangeOut: 0
+       shape: DIAMOND
+   onUseEffects:
+     - class: DAMAGE
+       damageType: FIRE
+       power: 3.0
+       powerVar: 0.5
+       abilityPowerMod: 0.0
+       targets: BOTH
+       effectTemplate:
+         rangeIn: 0
+         rangeOut: 0
+         shape: DIAMOND
+     - class: DAMAGEOVERTIME
+       damageType: FIRE
+       ConditionName: Liquid Fire
+       description: You caught fire and take damage over time
+       stackable: true
+       unique: true
+       power: 4.0
+       duration: 3
+       powerVar: 0.2
+       durationVar: 0.5
+       abilityPowerMod: 0.3
+       abilityDurationMod: 0.3 
+       targets: BOTH
+       effectTemplate:
+          rangeIn: 0
+          rangeOut: 0
+          shape: DIAMOND
+...         
+            
