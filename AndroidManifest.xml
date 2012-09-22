@@ -29,7 +29,7 @@
                 <category android:name="android.intent.category.LAUNCHER"></category>
             </intent-filter>
         </activity>
-        <activity android:name="org.anddev.tests.DigitalOnScreenControlExample" android:label="control">
+        <activity android:name="org.vagosduke.andengine.radiance.tests.DigitalOnScreenControlExample" android:label="control">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"></action>
                 <category android:name="android.intent.category.LAUNCHER"></category>
