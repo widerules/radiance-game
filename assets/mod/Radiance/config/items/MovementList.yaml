@@ -1,0 +1,63 @@
+---
+ - name: Leather boots
+   description: A pair of dark leather boots with some stylish decorations
+   type: MOVEMENT
+   subtype: LEATHER
+   speedModifier: 1.0
+   value: 20
+   level: 1
+   size: 1
+   weight: 1.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 2
+   
+   
+   
+ - name: Dragonscale Boots
+   description: These boots are made from the scales of an adult dragon
+   type: MOVEMENT
+   subtype: PLATE
+   speedModifier: 0.78
+   value: 1200
+   level: 7
+   size: 1
+   weight: 2.8
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: false
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 6
+        
+      - stat: MAGICRESIST
+        amount: 0.20
+      
+      
+      
+      
+      
+ - name: Dilan's shoes
+   description: The great athlet Dilan run with these shoes
+   type: MOVEMENT
+   subtype: CLOTH
+   speedModifier: 1.4
+   value: 2200
+   level: 5
+   size: 1
+   weight: 1.0
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: false
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 1
+      - stat: SPEED
+        amount: 10
+...

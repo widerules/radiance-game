@@ -1,0 +1,5 @@
+---
+  - config/spells/freeze.yaml
+  - config/spells/inferno.yaml
+  - config/spells/aid.yaml
+...

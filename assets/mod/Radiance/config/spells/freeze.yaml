@@ -1,0 +1,47 @@
+---
+name: Freeze
+description: Drops the victim's temperature below zero causing frostbite
+rankNum: 2
+ranks:
+    - rank: 1
+      MPcost: 4
+      range: 
+          rangeIn: 0
+          rangeOut: 2
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 0
+          shape: DIAMOND
+      effects:
+          - class: DAMAGE
+            power: 4.0
+            powerVar: 0.2
+            abilityPowerMod: 0.3
+            damageType: ICE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 0
+                shape: DIAMOND
+
+    - rank: 2
+      MPcost: 9
+      range: 
+          rangeIn: 0
+          rangeOut: 2
+          shape: DIAMOND
+      effectTemplate:
+          rangeIn: 0
+          rangeOut: 1
+          shape: DIAMOND
+      effects:
+          - class: DAMAGE
+            power: 10.0
+            powerVar: 0.2
+            abilityPowerMod: 0.3
+            damageType: ICE
+            effectTemplate:
+                rangeIn: 0
+                rangeOut: 1
+                shape: DIAMOND
+...

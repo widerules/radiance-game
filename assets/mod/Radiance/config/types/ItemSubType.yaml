@@ -1,0 +1,46 @@
+---
+WeaponType:
+    - DAGGER
+    - SWORD
+    - AXE
+    - SPEAR
+    - BOW
+    - STAFF
+    - WAND
+
+
+ArmorType:
+    - CLOTH
+    - LEATHER
+    - CHAIN
+    - PLATE
+
+   
+ShieldType:
+    - BUCKLER
+    - SMALL
+    - LARGE
+
+
+MovementType:
+    - CLOTH
+    - LEATHER
+    - CHAIN
+    - PLATE
+
+
+ConsumableType:
+    - POTION
+    - FOOD
+
+
+AccessoryType:
+    - NECKLACE
+    - RING
+    - BRACER
+    
+    
+OtherType:
+    - QUEST
+    - MISCELLANEOUS
+...

@@ -1,0 +1,64 @@
+---
+ - name: Round Shield
+   description: A simple metal round shield
+   type: SHIELD
+   subtype: SMALL
+   value: 20
+   level: 1
+   size: 1
+   weight: 2.6
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: BLOCK
+        amount: 0.20
+        
+      - stat: ARMOR
+        amount: 3
+      
+  
+   
+
+ - name: Buckler
+   description: A small wooden shield that straps to your arm
+   type: SHIELD
+   subtype: BUCKLER
+   value: 10
+   level: 1
+   size: 1
+   weight: 1.2
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: BLOCK
+        amount: 0.10
+        
+      - stat: ARMOR
+        amount: 1
+   
+   
+   
+   
+ - name: Medusa Shield
+   description: A small wooden shield that straps to your arm
+   type: SHIELD
+   subtype: LARGE
+   value: 2000
+   level: 7
+   size: 1
+   weight: 3.5
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: false
+   onEquipBonuses:
+      - stat: BLOCK
+        amount: 0.30
+        
+      - stat: ARMOR
+        amount: 5
+...

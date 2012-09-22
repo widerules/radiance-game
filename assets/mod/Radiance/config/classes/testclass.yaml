@@ -1,0 +1,7 @@
+---
+abilityList:
+  - name: FREEZE
+    unlockLevel: 1-5
+  - name: INFERNO
+    unlockLevel: 3-7
+    

@@ -1,0 +1,84 @@
+---
+ - name: Angelic Vestment
+   description: A winged golden metal vest protects the wearer from death
+   type: ARMOR
+   subtype: CLOTH
+   value: 5000
+   level: 10
+   size: 1
+   weight: 3.5
+   speedModifier: 1.0
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: false
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 3
+        
+      - stat: ATTACKRESIST
+        amount: 0.50
+        
+      
+      
+  
+   
+
+ - name: Leather Armor
+   description: This armor is made from cured cow skin
+   type: ARMOR
+   subtype: LEATHER
+   value: 10
+   level: 2
+   size: 1
+   weight: 4.0
+   speedModifier: 1.0
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 4
+   
+   
+   
+   
+ - name: Diamond Plate
+   description: This mythical plated armor can only be worn by few worthy warriors
+   type: ARMOR
+   subtype: PLATE
+   value: 1000
+   level: 8
+   size: 1
+   weight: 15.6
+   speedModifier: 0.60
+   usable: false
+   stackable: false
+   droppable: false
+   shoppable: true
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 22
+        
+      - stat: MAGICRESIST
+        amount: 0.40
+        
+        
+ - name: Full Plate Mail
+   description: A full suit of the finest and heaviest of armors
+   type: ARMOR
+   subtype: PLATE
+   value: 350
+   level: 7
+   size: 1
+   weight: 14.5
+   speedModifier: 0.50
+   usable: false
+   stackable: false
+   droppable: true
+   shoppable: true
+   onEquipBonuses:
+      - stat: ARMOR
+        amount: 25   
+...
